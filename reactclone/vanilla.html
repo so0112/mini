@@ -1,0 +1,31 @@
+<!-- html 
+카운트 출력부 생성 
+버튼 생성
+
+js
+카운트 출력부 변수선언
+버튼 변수 선언 - 버튼 이벤트 리스너('클릭', 콜백함수)
+버튼이 눌릴 때마다 실행될 콜백함수 작성
+    counter 1씩 증가
+    span 태그의 텍스트 변경 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<span> Total clicks: 0</span>
+<button id="btn">Click me</button>
+
+   
+</body>
+<script>
+    let counter = 0
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    const handleClick = () => {
+        counter = counter + 1;
+        span.innerText = `Total clicks: ${counter}`
+    }
+
+    button.addEventListener("click", handleClick);
+</script>
+</html>
