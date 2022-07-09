@@ -1,14 +1,11 @@
-import Hello from './component/Hello'; 
-import Welcome from './component/Welcome';
-import "./component/Hello.css"
-import './App.css';
-import styles from "./App.module.css"
+import Header from "./component/Header";
 
 function App() {
-  return <div className="App">
-    <Hello />
-    <div className={styles.box}>App</div>
-    </div>;
+  return(
+  <div className="App">
+    <Header />
+  </div>
+) 
 }
 
 export default App;
